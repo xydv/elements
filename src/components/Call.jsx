@@ -11,7 +11,7 @@ function Call(props) {
                     {HomeJson.map((e) => {
                         return (
                             <div className="col-sm-2 my-3" key={e.number}>
-                                <Item imagesrc={`/images/png/${e.number}.png`} name={e.name} pngdownload={`/images/png/${e.number}.png`} svgdownload={`/images/svg/${e.number}.svg`} images={props.images} symbol={e.symbol} />
+                                <Item imagesrc={`/e/images/png/${e.number}.png`} name={e.name} pngdownload={`/e/images/png/${e.number}.png`} svgdownload={`/e/images/svg/${e.number}.svg`} images={props.images} symbol={e.symbol} />
                             </div>
                         )
                     })}
