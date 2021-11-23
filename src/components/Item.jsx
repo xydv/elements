@@ -4,7 +4,7 @@ function Item(props) {
   return (
     <div>
       <div className="card">
-        <img src={props.imagesrc} className="card-img-top" alt={props.name} />
+        {props.images ? <img src={props.imagesrc} className="card-img-top" alt={props.name} /> : ""}
         <div className="card-body">
           <h5 className="card-title text-center">{props.name}</h5>
           <div className="text-center">
