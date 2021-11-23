@@ -13,7 +13,7 @@ function Navbar() {
     }
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Elements</a>
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
