@@ -1,6 +1,7 @@
 {
   "name": "e",
   "version": "0.1.0",
+  "homepage": "https://icancodebeauty.github.io/e",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

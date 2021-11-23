@@ -13,12 +13,12 @@ function Navbar() {
     }
     return (
         <div>
-            <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Elements</a>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="/">Elements</a>
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         </ul>
-                        <button onClick={handleClick} class="btn btn-success">{show ? "Images" : "No Images"}</button>
+                        <button onClick={handleClick} className="btn btn-success">{show ? "Images" : "No Images"}</button>
                 </div>
             </nav>
             <Call images={show} />
