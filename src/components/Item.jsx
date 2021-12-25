@@ -2,17 +2,26 @@ import React from 'react'
 
 function Item(props) {
   return (
-    <div>
+    <>
+      {/* Card */}
       <div className="card">
-        {props.images ? <img src={props.imagesrc} className="card-img-top" alt={props.name} /> : ""}
-          <h5 className="text-center my-1">{props.symbol}</h5>
-          <h6 className="text-center">{props.name}</h6>
-          <div className="text-center">
-            <a href={props.pngdownload} target="_blank" rel="noreferrer" download={props.name} className="btn btn-primary btn-sm mb-3 mx-2">PNG</a>
-            <a href={props.svgdownload} target="_blank" rel="noreferrer" download={props.name} className="btn btn-primary btn-sm mb-3 mx-2">SVG</a>
+        <img src={props.imagesrc} className="card-img-top zoom-in" data-bs-toggle="modal" data-bs-target={"#" + props.name} alt={props.name} />
+        <div className="text-center my-3">
+          <a href={props.pngdownload} target="_blank" rel="noreferrer" download={props.name} className="btn btn-primary btn-sm mx-2">PNG</a>
+          <a href={props.svgdownload} target="_blank" rel="noreferrer" download={props.name} className="btn btn-primary btn-sm mx-2">SVG</a>
         </div>
       </div>
-    </div>
+      {/* Modal */}
+      <div className="modal fade" id={props.name} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-sm">
+          <div className="modal-content">
+            <div className="modal-body">
+              <img src={props.imagesrc} className="card-img-top zoom-out" data-bs-toggle="modal" data-bs-target={"#" + props.name} alt={props.name} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
