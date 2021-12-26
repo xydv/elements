@@ -13,7 +13,7 @@ function Item(props) {
       </div>
       {/* Modal */}
       <div className="modal fade" id={props.name} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-sm">
+        <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body">
               <img src={props.imagesrc} className="card-img-top zoom-out" data-bs-toggle="modal" data-bs-target={"#" + props.name} alt={props.name} />
